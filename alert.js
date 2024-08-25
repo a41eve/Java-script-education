@@ -320,3 +320,13 @@ alert('Я, JavaScript!');
 	let j = 0;
 	while (j++ < 5) alert(j); // 1 -> 2 -> 3 -> 4 -> 5
 })();
+
+(function Cycles_exercise_three() {
+	"use strict";
+
+	for (let i = 0; i < 5; i++) alert( i ); // 1 -> 2 -> 3 -> 4
+
+	for (let i = 0; i < 5; ++i) alert( i ); // 1 -> 2 -> 3 -> 4
+	
+	// нет разницы в записях ++i и i++ для for
+})();
