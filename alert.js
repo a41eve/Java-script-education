@@ -450,3 +450,15 @@ alert('Я, JavaScript!');
 		return (age > 18) || confirm('Родители разрешили?');
 	}
 })();
+
+(function Function_exercise_three() {
+	"use strict";
+
+	function min(a, b) {
+		if (a < b) {
+			return a;
+		} else {
+			return b;
+		}
+	}
+})();
