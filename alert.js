@@ -120,3 +120,15 @@ alert('Я, JavaScript!');
 		alert( 'Привет' ); // Выведется 'Привет'
 	}
 })();
+
+(function If_exercise_two() {
+	"use strict";
+
+	let oficialName = prompt('Какое официальное название JavaScript?', '');
+
+	if (oficialName == 'ECMAScript') {
+		alert('Верно!');
+	}	else {
+		alert('Не знаете? ECMAScript');
+	}
+})();
