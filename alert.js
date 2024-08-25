@@ -165,3 +165,10 @@ alert('Я, JavaScript!');
 	(login == '') ? 'Нет логина' :
 	'';
 })();
+
+// logic_op
+(function If_exercise_one() {
+	"use strict";
+
+	alert( null || 2 || undefined ); // 2
+})();
