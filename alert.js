@@ -111,3 +111,57 @@ alert('Я, JavaScript!');
 	null == "\n0\n" // false
 	null === +"\n0\n" // false
 })();
+
+// if
+(function If_exercise_one() {
+	"use strict";
+
+	if ("0") {
+		alert( 'Привет' ); // Выведется 'Привет'
+	}
+})();
+
+(function If_exercise_two() {
+	"use strict";
+
+	let oficialName = prompt('Какое официальное название JavaScript?', '');
+
+	if (oficialName == 'ECMAScript') {
+		alert('Верно!');
+	}	else {
+		alert('Не знаете? ECMAScript');
+	}
+})();
+
+(function If_exercise_three() {
+	"use strict";
+
+	let value = prompt('Введите число:', 0);
+
+	if (value > 0) {
+		alert(1);
+	} else if (value < 0) {
+		alert(-1);
+	} else {
+		alert(0);
+	}
+})();
+
+(function If_exercise_four() {
+	"use strict";
+
+	let result;
+
+	result = (a + b < 4) ? 'Мало' : 'Много';
+})();
+
+(function If_exercise_five() {
+	"use strict";
+
+	let message;
+
+	message = (login == 'Сотрудник') ? 'Привет' :
+	(login == 'Директор') ? 'Здравствуйте' :
+	(login == '') ? 'Нет логина' :
+	'';
+})();
