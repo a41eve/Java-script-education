@@ -26,3 +26,14 @@ alert('Я, JavaScript!');
 	const BIRTHDAY = '18.04.1982'; // birthday пишем заглавными, т.к. значение не изменяется
 	const age = someCode(BIRTHDAY); // age пишем маленькими буквами, т.к. значение изменяется с каждым годом
 })();
+
+// data_type
+(function Data_type_exercise_one() {
+	"use strict";
+
+	let name = "Ilya";
+
+	alert( `hello ${1}` ); // hello 1
+	alert( `hello ${"name"}` ); // hello name
+	alert( `hello ${name}` ); // hello Ilya
+})();
