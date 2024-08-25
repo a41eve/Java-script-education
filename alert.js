@@ -184,3 +184,9 @@ alert('Я, JavaScript!');
 
 	alert( 1 && null && 2 ); // null
 })();
+
+(function If_exercise_four() {
+	"use strict";
+
+	alert( alert(1) && alert(2) ); // 1, затем undefined
+})();
