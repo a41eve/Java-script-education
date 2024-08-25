@@ -289,3 +289,13 @@ alert('Я, JavaScript!');
 
 	alert(city); // Берлин
 })();
+
+(function Null_exercise_three() {
+	"use strict";
+
+	let num1 = 10,
+	num2 = 20,
+	result;
+
+	result ??= num1 ?? num2;
+})();
