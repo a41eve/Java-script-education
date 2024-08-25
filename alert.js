@@ -19,3 +19,10 @@ alert('Я, JavaScript!');
 		let ourPlanetName;
 		let currentUserName;
 })();
+
+(function Variables_exercise_three() {
+	"use strict";
+
+	const BIRTHDAY = '18.04.1982'; // birthday пишем заглавными, т.к. значение не изменяется
+	const age = someCode(BIRTHDAY); // age пишем маленькими буквами, т.к. значение изменяется с каждым годом
+})();
