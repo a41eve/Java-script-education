@@ -190,3 +190,9 @@ alert('Я, JavaScript!');
 
 	alert( alert(1) && alert(2) ); // 1, затем undefined
 })();
+
+(function If_exercise_five() {
+	"use strict";
+
+	alert( null || 2 && 3 || 4 ); // 3
+})();
