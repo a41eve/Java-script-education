@@ -412,3 +412,27 @@ alert('Я, JavaScript!');
 			break;
 	}
 })();
+
+// function
+(function Function_exercise_one() {
+	"use strict";
+
+	let age = prompt('Сколько вам лет: ', '');
+
+	function checkAge(age) {
+		if (age > 18) {
+			return true;
+		} else {
+			return confirm('Родители разрешили?'); 
+		}
+	}
+
+	function checkAge1(age) {
+		if (age > 18) {
+			return true;
+		}
+		return confirm('Родители разрешили?');
+	}
+
+	// работает одинаково, что с else, что без него
+})();
