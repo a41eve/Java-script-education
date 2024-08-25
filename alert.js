@@ -165,3 +165,107 @@ alert('Я, JavaScript!');
 	(login == '') ? 'Нет логина' :
 	'';
 })();
+
+// logic_op
+(function If_exercise_one() {
+	"use strict";
+
+	alert( null || 2 || undefined ); // 2
+})();
+
+(function If_exercise_two() {
+	"use strict";
+
+	alert( alert(1) || 2 || alert(3) ); // 1, затем 2
+})();
+
+(function If_exercise_three() {
+	"use strict";
+
+	alert( 1 && null && 2 ); // null
+})();
+
+(function If_exercise_four() {
+	"use strict";
+
+	alert( alert(1) && alert(2) ); // 1, затем undefined
+})();
+
+(function If_exercise_five() {
+	"use strict";
+
+	alert( null || 2 && 3 || 4 ); // 3
+})();
+
+(function If_exercise_six() {
+	"use strict";
+
+	let value = NaN;
+
+	value &&= 10;
+	value ||= 20;
+	value &&= 30;
+	value ||= 40;
+
+	alert(value); // 30
+})();
+
+(function If_exercise_seven() {
+	"use strict";
+
+	let age = prompt('Сколько вам лет: ', '');
+
+	if (age >= 14 && age <= 90) {
+		alert('Норм');
+	} else {
+		alert('Не норм');
+	}
+})();
+
+(function If_exercise_eight() {
+	"use strict";
+
+	let age = prompt('Сколько вам лет: ', '');
+
+	if (!(age >= 14 && age <= 90)) {
+		alert('Норм');
+	} else {
+		alert('Не норм');
+	}
+
+	if (age > 14 || age < 90) {
+		alert('Норм');
+	} else {
+		alert('Не норм');
+	}
+})();
+
+(function If_exercise_nine() {
+	"use strict";
+
+	if (-1 || 0) alert( 'first' ); // выполнится
+	if (-1 && 0) alert( 'second' ); // не выполнится 
+	if (null || -1 && 1) alert( 'third' ); // выполнится 
+})();
+
+(function If_exercise_ten() {
+	"use strict";
+
+	let login = prompt('Кто там?', '');
+
+	if (login == 'Админ') {
+		let pass = prompt('Введите пароль: ', '');
+
+		if (pass == 'Я Главный') {
+			alert('Здравствуйте!'); 
+		} else if (pass === '' || pass === null) {
+			alert('Отменено');
+		} else {
+			alert('Неверный пароль');
+		}
+	} else if (login === '' || login === null) {
+		alert('Отменено');
+	} else {
+		alert('Я вас не знаю');
+	}
+})();
