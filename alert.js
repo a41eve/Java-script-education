@@ -12,3 +12,10 @@ alert('Я, JavaScript!');
 
 		alert(admin);
 })();
+
+(function Variables_exercise_two() {
+	"use strict";
+
+		let ourPlanetName;
+		let currentUserName;
+})();
