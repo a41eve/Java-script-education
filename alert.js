@@ -167,37 +167,37 @@ alert('Я, JavaScript!');
 })();
 
 // logic_op
-(function If_exercise_one() {
+(function Logic_op_exercise_one() {
 	"use strict";
 
 	alert( null || 2 || undefined ); // 2
 })();
 
-(function If_exercise_two() {
+(function Logic_op_exercise_two() {
 	"use strict";
 
 	alert( alert(1) || 2 || alert(3) ); // 1, затем 2
 })();
 
-(function If_exercise_three() {
+(function Logic_op_exercise_three() {
 	"use strict";
 
 	alert( 1 && null && 2 ); // null
 })();
 
-(function If_exercise_four() {
+(function Logic_op_exercise_four() {
 	"use strict";
 
 	alert( alert(1) && alert(2) ); // 1, затем undefined
 })();
 
-(function If_exercise_five() {
+(function Logic_op_exercise_five() {
 	"use strict";
 
 	alert( null || 2 && 3 || 4 ); // 3
 })();
 
-(function If_exercise_six() {
+(function Logic_op_exercise_six() {
 	"use strict";
 
 	let value = NaN;
@@ -210,7 +210,7 @@ alert('Я, JavaScript!');
 	alert(value); // 30
 })();
 
-(function If_exercise_seven() {
+(function Logic_op_exercise_seven() {
 	"use strict";
 
 	let age = prompt('Сколько вам лет: ', '');
@@ -222,7 +222,7 @@ alert('Я, JavaScript!');
 	}
 })();
 
-(function If_exercise_eight() {
+(function Logic_op_exercise_eight() {
 	"use strict";
 
 	let age = prompt('Сколько вам лет: ', '');
@@ -240,7 +240,7 @@ alert('Я, JavaScript!');
 	}
 })();
 
-(function If_exercise_nine() {
+(function Logic_op_exercise_nine() {
 	"use strict";
 
 	if (-1 || 0) alert( 'first' ); // выполнится
@@ -248,7 +248,7 @@ alert('Я, JavaScript!');
 	if (null || -1 && 1) alert( 'third' ); // выполнится 
 })();
 
-(function If_exercise_ten() {
+(function Logic_op_exercise_ten() {
 	"use strict";
 
 	let login = prompt('Кто там?', '');
