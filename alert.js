@@ -221,3 +221,21 @@ alert('Я, JavaScript!');
 		alert('Не норм');
 	}
 })();
+
+(function If_exercise_eight() {
+	"use strict";
+
+	let age = prompt('Сколько вам лет: ', '');
+
+	if (!(age >= 14 && age <= 90)) {
+		alert('Норм');
+	} else {
+		alert('Не норм');
+	}
+
+	if (age > 14 || age < 90) {
+		alert('Норм');
+	} else {
+		alert('Не норм');
+	}
+})();
