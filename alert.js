@@ -276,3 +276,16 @@ alert('Я, JavaScript!');
 
 	alert(undefined ?? NaN ?? null ?? "" ?? " "); // NaN
 })();
+
+(function Null_exercise_two() {
+	"use strict";
+
+	let city = null;
+
+	city ??= "Берлин";
+	city ??= null;
+	city ??= "Кёльн";
+	city ??= "Гамбург";
+
+	alert(city); // Берлин
+})();
