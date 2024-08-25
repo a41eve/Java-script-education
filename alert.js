@@ -299,3 +299,14 @@ alert('Я, JavaScript!');
 
 	result ??= num1 ?? num2;
 })();
+
+// cycles
+(function Cycles_exercise_one() {
+	"use strict";
+
+	let i = 3;
+
+	while (i) {
+		alert( i-- ); // 3 -> 2 -> 1
+	}
+})();
