@@ -146,3 +146,11 @@ alert('Я, JavaScript!');
 		alert(0);
 	}
 })();
+
+(function If_exercise_four() {
+	"use strict";
+
+	let result;
+
+	result = (a + b < 4) ? 'Мало' : 'Много';
+})();
