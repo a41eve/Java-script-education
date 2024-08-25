@@ -178,3 +178,9 @@ alert('Я, JavaScript!');
 
 	alert( alert(1) || 2 || alert(3) ); // 1, затем 2
 })();
+
+(function If_exercise_three() {
+	"use strict";
+
+	alert( 1 && null && 2 ); // null
+})();
