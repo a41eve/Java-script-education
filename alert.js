@@ -37,3 +37,12 @@ alert('Я, JavaScript!');
 	alert( `hello ${"name"}` ); // hello name
 	alert( `hello ${name}` ); // hello Ilya
 })();
+
+// interaction
+(function Interaction_exercise_one() {
+	"use strict";
+
+	let userName = prompt('Введите имя:', '');
+
+	alert(userName);
+})();
