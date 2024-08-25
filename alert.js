@@ -361,3 +361,17 @@ alert('Я, JavaScript!');
 		num = prompt('Введите число больше 100: ', 0);
 	} while (num <= 100 && num);
 })();
+
+(function Cycles_exercise_seven() {
+	"use strict";
+
+	let n = 10;
+
+	primeNum:
+	for (let i = 2; i <= n; i++) {
+		for (let j = 2; j < i; j++) {
+			if (i % j == 0) continue primeNum;
+		}
+		alert(i);
+	}
+})();
