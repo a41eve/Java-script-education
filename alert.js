@@ -300,3 +300,78 @@ alert('Я, JavaScript!');
   result ??= num1 ?? num2;
 })();
 
+// cycles
+(function Cycles_exercise_one() {
+	"use strict";
+
+	let i = 3;
+
+	while (i) {
+		alert( i-- ); // 3 -> 2 -> 1
+	}
+})();
+
+(function Cycles_exercise_two() {
+	"use strict";
+
+	let i = 0;
+	while (++i < 5) alert(i); // 1 -> 2 -> 3 -> 4
+
+	let j = 0;
+	while (j++ < 5) alert(j); // 1 -> 2 -> 3 -> 4 -> 5
+})();
+
+(function Cycles_exercise_three() {
+	"use strict";
+
+	for (let i = 0; i < 5; i++) alert( i ); // 1 -> 2 -> 3 -> 4
+
+	for (let i = 0; i < 5; ++i) alert( i ); // 1 -> 2 -> 3 -> 4
+	
+	// нет разницы в записях ++i и i++ для for
+})();
+
+(function Cycles_exercise_four() {
+	"use strict";
+
+	for (let i = 2; i <= 10; i++) {
+		if (i % 2 == 0) {
+			alert(i);
+		}
+	}
+})();
+
+(function Cycles_exercise_five() {
+	"use strict";
+
+	let i = 0;
+
+	while (i > 3) {
+		alert(`number ${i}!`);
+		i++;
+	}
+})();
+
+(function Cycles_exercise_six() {
+	"use strict";
+
+	let num;
+
+	do {
+		num = prompt('Введите число больше 100: ', 0);
+	} while (num <= 100 && num);
+})();
+
+(function Cycles_exercise_seven() {
+	"use strict";
+
+	let n = 10;
+
+	primeNum:
+	for (let i = 2; i <= n; i++) {
+		for (let j = 2; j < i; j++) {
+			if (i % j == 0) continue primeNum;
+		}
+		alert(i);
+	}
+})();
