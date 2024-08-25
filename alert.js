@@ -269,3 +269,10 @@ alert('Я, JavaScript!');
 		alert('Я вас не знаю');
 	}
 })();
+
+// null
+(function Null_exercise_one() {
+	"use strict";
+
+	alert(undefined ?? NaN ?? null ?? "" ?? " "); // NaN
+})();
