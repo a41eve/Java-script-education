@@ -111,3 +111,12 @@ alert('Я, JavaScript!');
 	null == "\n0\n" // false
 	null === +"\n0\n" // false
 })();
+
+// if
+(function If_exercise_one() {
+	"use strict";
+
+	if ("0") {
+		alert( 'Привет' ); // Выведется 'Привет'
+	}
+})();
