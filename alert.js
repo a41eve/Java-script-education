@@ -247,3 +247,25 @@ alert('Я, JavaScript!');
 	if (-1 && 0) alert( 'second' ); // не выполнится 
 	if (null || -1 && 1) alert( 'third' ); // выполнится 
 })();
+
+(function If_exercise_ten() {
+	"use strict";
+
+	let login = prompt('Кто там?', '');
+
+	if (login == 'Админ') {
+		let pass = prompt('Введите пароль: ', '');
+
+		if (pass == 'Я Главный') {
+			alert('Здравствуйте!'); 
+		} else if (pass === '' || pass === null) {
+			alert('Отменено');
+		} else {
+			alert('Неверный пароль');
+		}
+	} else if (login === '' || login === null) {
+		alert('Отменено');
+	} else {
+		alert('Я вас не знаю');
+	}
+})();
