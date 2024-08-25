@@ -196,3 +196,16 @@ alert('Я, JavaScript!');
 
 	alert( null || 2 && 3 || 4 ); // 3
 })();
+
+(function If_exercise_six() {
+	"use strict";
+
+	let value = NaN;
+
+	value &&= 10;
+	value ||= 20;
+	value &&= 30;
+	value ||= 40;
+
+	alert(value); // 30
+})();
