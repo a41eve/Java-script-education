@@ -436,3 +436,17 @@ alert('Я, JavaScript!');
 
 	// работает одинаково, что с else, что без него
 })();
+
+(function Function_exercise_two() {
+	"use strict";
+
+	let age = prompt('Сколько вам лет: ', '');
+
+	function checkAge(age) {
+		return (age > 18) ? true : conrirm('Родители разрешили?');
+	}
+
+	function checkAge1(age) {
+		return (age > 18) || confirm('Родители разрешили?');
+	}
+})();
