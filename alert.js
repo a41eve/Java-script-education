@@ -46,3 +46,56 @@ alert('Я, JavaScript!');
 
 	alert(userName);
 })();
+
+// operators
+(function Operators_exercise_one() {
+	"use strict";
+
+	let a = 1, b = 1;
+	let c = ++a; 
+	let d = b++; 
+
+	alert(a); // 2
+	alert(b); // 2
+	alert(c); // 2
+	alert(d); // 1
+})();
+
+(function Operators_exercise_two() {
+	"use strict";
+
+	let a = 2;
+	let x = 1 + (a *= 2);
+
+	alert(a); // 4
+	alert(x); // 5
+})();
+
+(function Operators_exercise_three() {
+	"use strict";
+
+	"" + 1 + 0 // "10"
+	"" - 1 + 0 // -1
+	true + false // true
+	6 / "3" // 2
+	"2" * "3" // 6
+	4 + 5 + "px" // 9px
+	"$" + 4 + 5 // $45
+	"4" - 2 // 2
+	"4px" - 2 // NaN
+	"  -9  " + 5 // " -9 5"
+	"  -9  " - 5 // -14
+	null + 1 // 1
+	undefined + 1 // NaN
+	" \t \n" - 2 // -2
+})();
+
+(function Operators_exercise_four() {
+	"use strict";
+
+	let a = prompt("Первое число?", 1);
+	let b = prompt("Второе число?", 2);
+
+	alert(+a + +b); // 3
+})();
+
