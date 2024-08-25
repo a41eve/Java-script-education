@@ -154,3 +154,14 @@ alert('Я, JavaScript!');
 
 	result = (a + b < 4) ? 'Мало' : 'Много';
 })();
+
+(function If_exercise_five() {
+	"use strict";
+
+	let message;
+
+	message = (login == 'Сотрудник') ? 'Привет' :
+	(login == 'Директор') ? 'Здравствуйте' :
+	(login == '') ? 'Нет логина' :
+	'';
+})();
