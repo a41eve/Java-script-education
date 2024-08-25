@@ -484,3 +484,19 @@ alert('Я, JavaScript!');
 		alert(`Степень ${n} не подходит, нужно натуральное значение`);
 	}
 })();
+
+// arrow
+(function Arrow_exercise_one() {
+	"use strict";
+
+	function ask(question, yes, no) {
+		if (confirm(question)) yes()
+		else no();
+	}
+	
+	ask(
+		"Вы согласны?",
+		() => alert("Вы согласились."),
+		() => alert("Вы отменили выполнение.")
+	);
+})();
