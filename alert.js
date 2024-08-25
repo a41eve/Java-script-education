@@ -269,3 +269,34 @@ alert('Я, JavaScript!');
 		alert('Я вас не знаю');
 	}
 })();
+
+// null
+(function Null_exercise_one() {
+	"use strict";
+
+	alert(undefined ?? NaN ?? null ?? "" ?? " "); // NaN
+})();
+
+(function Null_exercise_two() {
+	"use strict";
+
+	let city = null;
+
+	city ??= "Берлин";
+	city ??= null;
+	city ??= "Кёльн";
+	city ??= "Гамбург";
+
+	alert(city); // Берлин
+})();
+
+(function Null_exercise_three() {
+	"use strict";
+
+	let num1 = 10,
+    num2 = 20,
+    result;
+
+  result ??= num1 ?? num2;
+})();
+
