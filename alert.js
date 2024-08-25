@@ -330,3 +330,13 @@ alert('Я, JavaScript!');
 	
 	// нет разницы в записях ++i и i++ для for
 })();
+
+(function Cycles_exercise_four() {
+	"use strict";
+
+	for (let i = 2; i <= 10; i++) {
+		if (i % 2 == 0) {
+			alert(i);
+		}
+	}
+})();
