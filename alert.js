@@ -172,3 +172,9 @@ alert('Я, JavaScript!');
 
 	alert( null || 2 || undefined ); // 2
 })();
+
+(function If_exercise_two() {
+	"use strict";
+
+	alert( alert(1) || 2 || alert(3) ); // 1, затем 2
+})();
